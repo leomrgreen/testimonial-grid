@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1,
+h2,
+p {
+  font-size: 13px;
+}
+
+h1 {
+  margin-bottom: -10px;
+}
+
+p {
+  color: hsla(0, 0%, 81%, 0.7);
+}
+
+h1 {
+  color: hsl(0, 0%, 81%);
+}
+
+h2 {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+
+h3 {
+  color: white;
+}
+
+.david {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.quote {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.harmon {
+  background-color: white;
+}
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.harmon p,
+.kira p {
+  color: hsla(219, 29%, 14%, 0.7);
+}
+
+.harmon h2,
+.kira h2 {
+  color: hsla(219, 29%, 14%, 0.5);
+}
+
+.kira h3,
+.harmon h3,
+.kira h1,
+.harmon h1 {
+  color: hsl(219, 29%, 14%);
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25);
+}
+
+.testimonial-grid {
+  gap: 1.5rem;
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial img {
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 1.75rem;
+  border: 2px solid hsl(215, 5%, 52%);
+}
+
+@media screen and (min-width: 900px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonial:last-child {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .david,
+  .patrick {
+    grid-column: span 2;
+  }
+}
